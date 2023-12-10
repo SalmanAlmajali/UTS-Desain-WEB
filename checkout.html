@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elysium - E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a href="collections.html">Collections</a>
+      </nav>
+      <a href="index.html" class="logo">Elysium</a>
+      <nav class="navigation">
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <aside class="sidebar" style="width: 20%; padding-right: 5rem;">
+        <h2>Checkout</h2>
+        <ul>
+          <li>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenMenscrew01.jpg?v=1675454919"
+              width="100"
+              alt="Men's Crewneck"
+            />
+          </li>
+          <li>Men's Crewneck</li>
+          <li style="display: flex; justify-content: space-between">
+            <p>Subtotal</p>
+            <p>$90.0</p>
+          </li>
+          <li style="display: flex; justify-content: space-between">
+            <p>Shipping</p>
+            <p>$20.0</p>
+          </li>
+          <li style="display: flex; justify-content: space-between">
+            <h2>Total</h2>
+            <h2>$110.0</h2>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="product-catalog" style="background-color: white;">
+        <div>
+            <form action="#">
+                <div class="form-group">
+                    <label for="contact">Contact</label>
+                    <input type="text" id="contact" name="contact" placeholder="Email of Mobile phone number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Delivery</label>
+                    <select name="country" id="country">
+                        <option value="">Select one country</option>
+                    </select>
+                </div>
+                
+                <div class="form-group-row">
+                    <input type="text" id="first-name" name="first-name" placeholder="First name">
+                    <input type="text" id="last-name" name="last-name" placeholder="Last name">
+                </div>
+                
+                <div class="form-group">
+                    <textarea name="address" id="address" cols="30" rows="10">address</textarea>
+                </div>
+                
+                <div class="form-group-row">
+                    <input type="text" id="city" name="city" placeholder="City">
+                    <select id="last-name" name="last-name" placeholder="Last name">
+                        <option value="">Select one province</option>
+                    </select>
+                    <input type="number" id="postal-code" name="postal-code" placeholder="Postal Code">
+                </div>
+
+                <div class="form-group">
+                    <label for="shipping-method">Shipping Method</label>
+                    <div class="shipping-method">
+                        <div>
+                            <input type="radio" id="shipping-method" name="shipping-method" placeholder="Email of Mobile phone number">
+                            <span>Standard</span>
+                        </div>
+                        <p>$20.0</p>
+                    </div>
+                    <div class="shipping-method">
+                        <div>
+                            <input type="radio" id="shipping-method" name="shipping-method" placeholder="Email of Mobile phone number">
+                            <span>Express</span>
+                        </div>
+                        <p>$40.0</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment">Payment</label>
+                    <input type="number" id="payment" name="payment" placeholder="Credit Card">
+                </div>
+                
+                <div class="form-group-row">
+                    <input type="date" id="exp-date" name="exp-date" placeholder="Expiration Date">
+                    <input type="number" id="security-code" name="security-code" placeholder="Security Code">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name on card">
+                </div>
+
+                <button>Pay Now</button>
+            </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="index.html" class="logo">Elysium</a>
+      <p>&copy; 2023 Elysium</p>
+    </footer>
+  </body>
+</html>
